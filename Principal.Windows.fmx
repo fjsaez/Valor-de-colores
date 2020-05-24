@@ -1,0 +1,61 @@
+inherited FPrinc_Windows: TFPrinc_Windows
+  Left = 405
+  Top = 234
+  Position = Designed
+  Left = 405
+  Top = 234
+  DesignerMasterStyle = 0
+  inherited Label1: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited ERojo: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited EVerde: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited Label2: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited EAzul: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited Label3: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited EValHex: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited Label4: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited ClPanel: TColorPanel
+    UseAlpha = False
+  end
+  inherited ColorBox: TColorBox
+    Position.X = 463.000000000000000000
+    Position.Y = 151.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inherited SpeedButton1: TSpeedButton
+    Position.Y = 8.000000000000000000
+    OnClick = SpeedButton1Click
+  end
+  inherited EAzulH: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited EVerdeH: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited ERojoH: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited Label5: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited Label6: TLabel
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+end

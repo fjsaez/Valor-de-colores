@@ -1,0 +1,243 @@
+object FPrinc: TFPrinc
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Valor de colores'
+  ClientHeight = 253
+  ClientWidth = 567
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 256.000000000000000000
+    Position.Y = 17.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Rojo (R)'
+    TabOrder = 13
+  end
+  object ERojo: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    KeyboardType = NumberPad
+    MaxLength = 3
+    FilterChar = '1234567890'
+    Text = '0'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Position.X = 256.000000000000000000
+    Position.Y = 45.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, FontColor]
+    OnKeyUp = ERojoKeyUp
+  end
+  object EVerde: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    KeyboardType = NumberPad
+    MaxLength = 3
+    FilterChar = '1234567890'
+    Text = '0'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Position.X = 344.000000000000000000
+    Position.Y = 45.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, FontColor]
+    OnKeyUp = ERojoKeyUp
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 344.000000000000000000
+    Position.Y = 17.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Verde (G)'
+    TabOrder = 12
+  end
+  object EAzul: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    KeyboardType = NumberPad
+    MaxLength = 3
+    FilterChar = '1234567890'
+    Text = '0'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Position.X = 432.000000000000000000
+    Position.Y = 45.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, FontColor]
+    OnKeyUp = ERojoKeyUp
+  end
+  object Label3: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 432.000000000000000000
+    Position.Y = 17.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Azul (B)'
+    TabOrder = 11
+  end
+  object EValHex: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    TabStop = False
+    ReadOnly = True
+    MaxLength = 6
+    Text = '000000'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Position.X = 256.000000000000000000
+    Position.Y = 155.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, FontColor]
+  end
+  object Label4: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 256.000000000000000000
+    Position.Y = 127.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Valor en Hexadecimal'
+    TabOrder = 8
+  end
+  object ClPanel: TColorPanel
+    Color = claWhite
+    ColorBox = ColorBox
+    Position.X = 20.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 214.000000000000000000
+    Size.Height = 214.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    TabStop = False
+    OnChange = ClPanelChange
+  end
+  object ColorBox: TColorBox
+    Color = claWhite
+    EnableDragHighlight = False
+    Position.X = 456.000000000000000000
+    Position.Y = 143.000000000000000000
+    TabOrder = 7
+    TabStop = False
+  end
+  object SpeedButton1: TSpeedButton
+    Position.X = 536.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 22.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = ':-D'
+  end
+  object EAzulH: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    KeyboardType = NumberPad
+    MaxLength = 2
+    FilterChar = '1234567890ABCDEFabcdef'
+    Text = '0'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Position.X = 432.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, FontColor]
+    CharCase = ecUpperCase
+    OnKeyUp = ERojoHKeyUp
+  end
+  object EVerdeH: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    KeyboardType = NumberPad
+    MaxLength = 2
+    FilterChar = '1234567890ABCDEFabcdef'
+    Text = '0'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Position.X = 344.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, FontColor]
+    CharCase = ecUpperCase
+    OnKeyUp = ERojoHKeyUp
+  end
+  object ERojoH: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    KeyboardType = NumberPad
+    MaxLength = 2
+    FilterChar = '1234567890ABCDEFabcdef'
+    Text = '0'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Position.X = 256.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, FontColor]
+    CharCase = ecUpperCase
+    OnKeyUp = ERojoHKeyUp
+  end
+  object Label5: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 512.000000000000000000
+    Position.Y = 51.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Dec'
+    TabOrder = 10
+  end
+  object Label6: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 512.000000000000000000
+    Position.Y = 91.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Hex'
+    TabOrder = 9
+  end
+end

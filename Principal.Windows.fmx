@@ -1,6 +1,7 @@
 inherited FPrinc_Windows: TFPrinc_Windows
   Left = 405
   Top = 234
+  ClientWidth = 610
   Position = Designed
   Left = 405
   Top = 234
@@ -13,49 +14,73 @@ inherited FPrinc_Windows: TFPrinc_Windows
   end
   inherited EVerde: TEdit
     TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 360.000000000000000000
   end
   inherited Label2: TLabel
+    Position.X = 360.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
   end
   inherited EAzul: TEdit
     TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 464.000000000000000000
   end
   inherited Label3: TLabel
+    Position.X = 464.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
   end
   inherited EValHex: TEdit
     TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 347.000000000000000000
+    Position.Y = 152.000000000000000000
   end
   inherited Label4: TLabel
+    Position.X = 360.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
   end
-  inherited ClPanel: TColorPanel
-    UseAlpha = False
-  end
   inherited ColorBox: TColorBox
-    Position.X = 463.000000000000000000
-    Position.Y = 151.000000000000000000
+    Position.X = 257.000000000000000000
     Size.Width = 80.000000000000000000
     Size.Height = 80.000000000000000000
     Size.PlatformDefault = False
   end
   inherited SpeedButton1: TSpeedButton
-    Position.Y = 8.000000000000000000
+    Position.X = 583.000000000000000000
+    Position.Y = 4.000000000000000000
     OnClick = SpeedButton1Click
   end
   inherited EAzulH: TEdit
     TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 464.000000000000000000
   end
   inherited EVerdeH: TEdit
     TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 360.000000000000000000
   end
   inherited ERojoH: TEdit
     TextSettings.Font.StyleExt = {00070000000000000004000000}
   end
   inherited Label5: TLabel
+    Position.X = 552.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
   end
   inherited Label6: TLabel
+    Position.X = 552.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited EValDec: TEdit
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 347.000000000000000000
+  end
+  inherited Label7: TLabel
+    Position.X = 552.000000000000000000
+    Position.Y = 203.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Dec'
+  end
+  inherited Label8: TLabel
+    Position.X = 552.000000000000000000
+    Position.Y = 160.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Hex'
   end
 end

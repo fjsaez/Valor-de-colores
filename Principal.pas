@@ -41,6 +41,9 @@ type
     ERojoH: TEdit;
     Label5: TLabel;
     Label6: TLabel;
+    EValDec: TEdit;
+    Label7: TLabel;
+    Label8: TLabel;
     procedure ClPanelChange(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure ERojoKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
@@ -79,6 +82,8 @@ end;
 procedure TFPrinc.AsignarColores;
 begin
   EValHex.Text:=Col.ColorHex;
+  //EValDec.Text:=IntToStr(('$FF'+Col.ColorHex).ToInteger);
+  EValDec.Text:=IntToStr(ClPanel.Color);
   //en decimal:
   ERojo.Text:=Col.R.ToString;
   EVerde.Text:=Col.G.ToString;
@@ -153,7 +158,9 @@ begin
   ShowMessage('Valor de colores v1.0'+#10+#10+
     'Aplicación simple que devuelve el valor RGB de un color seleccionado'+#10+
     'de un TColorPanel. Realizado solamente con componentes nativos.'+#10+#10+
-    'Autor: Francisco J. Sáez S.'+#10+#10+
+    'Autor: Francisco J. Sáez S.'+#10+
+    'E-mail: fjsaez@gmail.com'+#10+
+    'LinkedIn: linkedin.com/in/francisco-josé-sáez-soto'+#10+#10+
     'Calabozo, 11 de mayo de 2020');
 end;
 

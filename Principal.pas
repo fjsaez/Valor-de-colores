@@ -15,7 +15,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Colors,
-  FMX.Edit, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
+  FMX.Edit, FMX.Controls.Presentation, FMX.StdCtrls;
 
 type
   TMiColor = record
@@ -82,7 +82,6 @@ end;
 procedure TFPrinc.AsignarColores;
 begin
   EValHex.Text:=Col.ColorHex;
-  //EValDec.Text:=IntToStr(('$FF'+Col.ColorHex).ToInteger);
   EValDec.Text:=IntToStr(ClPanel.Color);
   //en decimal:
   ERojo.Text:=Col.R.ToString;

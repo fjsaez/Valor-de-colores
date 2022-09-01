@@ -46,7 +46,6 @@ inherited FPrinc_Windows: TFPrinc_Windows
   inherited SpeedButton1: TSpeedButton
     Position.X = 583.000000000000000000
     Position.Y = 4.000000000000000000
-    OnClick = SpeedButton1Click
   end
   inherited EAzulH: TEdit
     TextSettings.Font.StyleExt = {00070000000000000004000000}

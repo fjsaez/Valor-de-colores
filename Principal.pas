@@ -154,12 +154,12 @@ end;
 
 procedure TFPrinc.SpeedButton1Click(Sender: TObject);
 begin
-  ShowMessage('Valor de colores v1.0'+#10+#10+
+  ShowMessage('Valor de colores v1.0'+#10#10+
     'Aplicación simple que devuelve el valor RGB de un color seleccionado'+#10+
-    'de un TColorPanel. Realizado solamente con componentes nativos.'+#10+#10+
+    'de un TColorPanel. Realizado solamente con componentes nativos.'+#10#10+
     'Autor: Francisco J. Sáez S.'+#10+
     'E-mail: fjsaez@gmail.com'+#10+
-    'LinkedIn: linkedin.com/in/francisco-josé-sáez-soto'+#10+#10+
+    'LinkedIn: linkedin.com/in/francisco-josé-sáez-soto'+#10#10+
     'Calabozo, 11 de mayo de 2020');
 end;
 
